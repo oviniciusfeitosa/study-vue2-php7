@@ -13,7 +13,7 @@ class CreateTableQuestoes extends Migration
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_unicode_ci';
 
-            $table->id()->nullable(false)->primary()->autoIncrement();
+            $table->id()->nullable(false)->autoIncrement();
             $table->string('descricao', 5000)->nullable(false);
             $table->unsignedBigInteger('orgao_id');
             $table->unsignedBigInteger('banca_id');

@@ -13,7 +13,7 @@ class CreateTableBanca extends Migration
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_unicode_ci';
 
-            $table->id()->nullable(false)->primary()->autoIncrement();
+            $table->id()->nullable(false)->autoIncrement();
             $table->string('nome', 255)->nullable(false);
         });
     }

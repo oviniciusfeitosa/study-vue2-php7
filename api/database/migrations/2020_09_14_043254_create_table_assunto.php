@@ -13,7 +13,7 @@ class CreateTableAssunto extends Migration
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_unicode_ci';
 
-            $table->id()->nullable(false)->primary()->autoIncrement();
+            $table->id()->nullable(false)->autoIncrement();
             $table->string('assunto', 255)->nullable(false);
         });
     }
