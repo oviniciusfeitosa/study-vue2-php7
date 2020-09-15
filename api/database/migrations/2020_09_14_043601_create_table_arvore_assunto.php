@@ -4,11 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableGrupoAssunto extends Migration
+class CreateTableArvoreAssunto extends Migration
 {
     public function up(): void
     {
-        Schema::create('grupo_assunto', function (Blueprint $table) {
+        Schema::create('arvore_assunto', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_unicode_ci';
@@ -22,6 +22,6 @@ class CreateTableGrupoAssunto extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('grupo_assunto');
+        Schema::dropIfExists('arvore_assunto');
     }
 }

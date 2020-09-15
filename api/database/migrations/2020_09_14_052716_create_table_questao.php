@@ -4,11 +4,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableQuestoes extends Migration
+class CreateTableQuestao extends Migration
 {
     public function up(): void
     {
-        Schema::create('questoes', function (Blueprint $table) {
+        Schema::create('questao', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_unicode_ci';
@@ -27,6 +27,6 @@ class CreateTableQuestoes extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('questoes');
+        Schema::dropIfExists('questao');
     }
 }
